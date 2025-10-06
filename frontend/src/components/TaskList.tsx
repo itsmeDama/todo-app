@@ -21,9 +21,9 @@ export default function TaskList() {
   }, []);
 
   return (
-    <div>
+    <div className="flex flex-col h-full overflow-y-auto">
       {tasks.length === 0 ? (
-        <p className="text-gray-500">No pending tasks 🎉</p>
+        <p className="text-gray-500">No tasks yet</p>
       ) : (
         tasks.map((task) => (
           <TaskCard key={task.id} task={task} onDone={loadTasks} />

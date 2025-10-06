@@ -19,30 +19,28 @@ export default function TaskForm({ onTaskAdded }: Props) {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="bg-white p-4 rounded-2xl shadow-md mb-6"
-    >
-      <h2 className="text-xl font-semibold mb-4">Add New Task</h2>
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3">
       <input
         type="text"
         placeholder="Title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        className="border rounded-md w-full p-2 mb-3"
+        className="border rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <textarea
         placeholder="Description"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
-        className="border rounded-md w-full p-2 mb-3"
+        className="border rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
       />
-      <button
-        type="submit"
-        className="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
-      >
-        Add Task
-      </button>
+      <div className="flex justify-end">
+        <button
+          type="submit"
+          className="bg-blue-600 text-white py-2 w-1/2 rounded-md hover:bg-blue-700 transition"
+        >
+          Add
+        </button>
+      </div>
     </form>
   );
 }
