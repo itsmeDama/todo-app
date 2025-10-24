@@ -28,7 +28,7 @@ Each part runs in its own Docker container.
 
 ⚙️ Setup Instructions
 🧩 1. Clone the Repository
-git clone https://github.com/Pasindu-Adhikari/todo-app.git
+git clone https://github.com/itsmeDama/todo-app.git
 cd todo-app
 
 🧾 2. Environment Variables Setup
@@ -192,6 +192,6 @@ frontend	React app served via Nginx	5173
 ✔️ Meets all assignment requirements
 ✔️ Ready for GitHub submission
 
-👨‍💻 Author: Pasindu Adhikari
-📧 Email: pasinduadhikari.dev@gmail.com
-🌐 GitHub: https://github.com/Pasindu-Adhikari/todo-app
+👨‍💻 Author: Damisuru Jayaweera
+📧 Email: damisuru123@gmail.com
+🌐 GitHub: https://github.com/itsmeDama/todo-app.git
